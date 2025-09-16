@@ -1,0 +1,76 @@
+* {
+    margin:0;
+    paddin:0;
+    font-family: "Mark Pro";
+}
+
+/* --HEADER */
+
+header {
+    background-color: #0F1922;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.logo_mobile {
+    display: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #FC4E63;
+}
+
+
+/* -- TABLETTE RESPONSIVE */
+
+@media (max-width: 850px) {
+    .logo_valorant {
+        height: 50px;
+        width:300px;
+}
+}
+
+@media (max-width: 750px) {
+    .logo_mobile {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.logo_valorant {
+    display: none;
+}
+
+.header {
+    gap: 15px;
+}
+}
+
+/* -- MOBILE RESPONSIVE */
+
+@media (max-width: 460px) {
+    .logo_mobile {
+    height: 20px;
+    width: 20px;
+}
+}
+
+@media (max-width: 320px) {
+    .logo_mobile {
+    display: none;
+}
+}
