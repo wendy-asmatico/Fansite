@@ -37,10 +37,17 @@ nav a:hover {
 
 /* -- Contenue du main accueil */
 
+.presentation_accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #232526ff;
+}
+
 main {
     background-color: #0F1922;
     color: white;
-
 }
 
 .titre h1 {
@@ -80,6 +87,148 @@ margin-bottom: 20px;
 
 
 
+/* LIEN REGLE DU JEU */
+
+video {
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6); 
+}
+
+.btn_jeu {
+    background-color: #FC4E63;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 15px;
+    width: 15vw;
+    text-align: center;
+}
+
+.btn_jeu:hover {
+    background-color: #a21424ff;
+}
+
+
+.regle_presentation {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #232526ff;
+    padding: 20px;
+
+}
+
+.desc_video {
+    display:flex;
+    flex-direction: row;
+}
+
+.desc_video p {
+    width: 40vw;
+    font-size: 20px;
+}
+
+.desc_btn {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
+}
+
+/* LIEN evenement */
+
+.events {
+    height: 300px; /* hauteur de la bannière */
+    background: url('./icon/banner.jpeg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 20px;
+    }
+
+.events_text {
+    width: 50vw;
+    background-color: #f7f7f768;
+    color: black;
+    border-radius: 10px;
+}
+
+.btn_events {
+    background-color: #FC4E63;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+    width: 20vw;
+    text-align: center;
+}
+
+.btn_events:hover {
+    background-color: #a21424ff;
+}
+
+/* RESEAU SOCIAUX */
+
+.reseau_sociaux {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #232526ff;
+
+}
+
+.icon {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+footer {
+    display:flex;
+    flex-direction: row;
+    background-color: #0F1922;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.logo_footer {
+    width: 50px;
+    height: 50px;
+}
+
+.footer_text {
+    gap: 10px;
+}
+
 /* -- TABLETTE RESPONSIVE */
 
 @media (max-width: 850px) {
@@ -91,6 +240,12 @@ margin-bottom: 20px;
 .titre h1 {
     font-size: 40px;
 }
+
+/* FOOTER */
+
+ footer p {
+    width: 50vw;
+ }
 }
 
 @media (max-width: 750px) {
@@ -130,12 +285,42 @@ margin-bottom: 20px;
 .presentation {
     width: 80vw;
 }
+
+video {
+    display: none;
+}
+
+.desc_video p {
+    width: 90vw;
+    font-size: 20px;
+}
+
+.events {
+    height:400px;
+}
+
+.btn_jeu {
+    width: 80vw;
+}
+
+.events_text {
+    width: 90vw;
+}
+
+.btn_events {
+    width: 90vw;
+
+}
+
+footer {
+    flex-direction: column;
+    gap: 30px;
+}
+
 }
 
 @media (max-width: 325px) {
     .logo_mobile {
     display: none;
 }
-
-
 }

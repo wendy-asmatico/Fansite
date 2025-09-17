@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV de Wendy Asmatico - Développeuse Web">
+    <meta name="description" content="Site fan sur Valorant">
     <meta name="author" content="Wendy Asmatico">
     <title>Valorant News</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -15,8 +15,8 @@
 
 <body>
     <header>
-        <img src="logo_valorant.png" class="logo_valorant" height="75" width="500">
-        <img src="logo_mobile.jpg" alt="Logo" class="logo_mobile">
+        <img src="./icon/logo_valorant.png" class="logo_valorant" height="75" width="500">
+        <img src="./icon/logo_mobile.jpg" alt="Logo" class="logo_mobile">
         <nav class="header">
             <a href="accueil.html">Accueil</a>
             <a href="news.html">Actus</a>
@@ -26,35 +26,80 @@
     </header>
 
     <main>
-        <section class="titre">
-            <h1>Bienvenue sur Valorant Fan Site</h1>
-        </section>
-
-
-        <div class="card">
-            <section class="presentation">
-                <h2>Présentation du jeu </h2>
-                <p>Valorant est un jeu de tir tactique en 5v5 développé par Riot Games.
-                    Combinez précision, stratégie et compétences uniques pour dominer vos adversaires.</p>
+        <div class="presentation_accueil">
+            <section class="titre">
+                <h1>Bienvenue sur Valorant Fan Site</h1>
             </section>
-            <section class="presentation">
-                <h2>Vous retrouverez ici </h2>
-                <ul>
-                    <li>Des informations sur les événements</li>
-                    <li>Les actualités du jeu</li>
-                    <li>Les différentes équipe e-sport</li>
-                </ul>
-            </section>
+
+            <div class="card">
+                <section class="presentation">
+                    <h2>Présentation du jeu </h2>
+                    <p>Valorant est un jeu de tir tactique en 5v5 développé par Riot Games.
+                        Combinez précision, stratégie et compétences uniques pour dominer vos adversaires.</p>
+                </section>
+                <section class="presentation">
+                    <h2>Vous retrouverez ici </h2>
+                    <ul>
+                        <li>Des informations sur les événements</li>
+                        <li>Les actualités du jeu</li>
+                        <li>Comment bien jouer au jeu</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div>
+                <a href="https://playvalorant.com/fr-fr/" class="btn_jeu">JOUEZ GRATUITEMENT</a>
+            </div>
+            <br>
         </div>
 
-        <div>
+        <div class="regle_presentation">
+            <h1>Découvrez toutes les règles du jeu</h1>
+            <div class="desc_video">
+                <div class="desc_btn">
+                    <p>Tu débutes ou tu veux rafraîchir ta mémoire ? Nous avons préparé une section spéciale qui
+                        explique clairement les bases : objectifs, rôle des équipes, Spike, agents et conditions de
+                        victoire.</p>
+                    <a href="regle.html" class="btn_jeu">Apprendre le jeu</a>
+                </div>
+                <video autoplay muted loop playsinline>
+                    <source src="./icon/video_regle.mp4" type="video/mp4" class="video">
+                    Ton navigateur ne supporte pas la vidéo HTML5.
+                </video>
+            </div>
+        </div>
 
+        <div class="events">
+            <div class="events_text">
+                <h1>Découvrez l'événement du moment</h1>
+                <h2>VALORANT CHAMPIONS PARIS</h2>
+                <p>Regardez les plus grands affrontements des meilleures équipes dans VALORANT pendant les Champions, du
+                    12 septembre au 5 octobre.</p>
+            </div>
+            <a href="events.html" class="btn_events">Découvrez les événements</a>
+        </div>
+
+        <div class="reseau_sociaux">
+            <h1>Rejoingnez la communauté</h1>
+            <div class="logo_reseau">
+                <a href="https://discord.gg/ufFtcyEVrw"><img src="./icon/discorde.png" alt="discord-logo" class="icon"/></a>
+                <a href="https://www.instagram.com/valorantfr"><img src="./icon/instagram.png" alt="tiktok--v1" class="icon" /></a>
+                <a href="https://www.youtube.com/@VALORANTfr"><img src="./icon/youtube.png" class="icon"></a>
+                <a href="http://twitter.com/valorantfr"><img src="./icon/twitter.png" class="icon"></a>
+                <a href="https://www.tiktok.com/@valorant"><img src="./icon/tiktok.png" class="icon"></a>
+            </div>
         </div>
 
     </main>
 
     <footer>
-        @2025 - Valorant est la propriété de Riot Game
+        <img src="./icon/logo_mobile.jpg" alt="Logo" class="logo_footer">
+            <nav class="footer">
+            <a href="news.html">Actus</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">Règles</a>
+        </nav>
+        <p>@2025 - Valorant est la propriété de Riot Game -  Ce site n'est pas un produit officiel </p>
     </footer>
 </body>
 
