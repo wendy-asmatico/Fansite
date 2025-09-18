@@ -2,10 +2,12 @@
     margin:0;
     paddin:0;
     font-family: "Mark Pro";
+    
 }
 
 main {
     padding-top: 20px;
+
 }
 
 /* --HEADER */
@@ -375,7 +377,7 @@ margin: 5px 0;
     margin-bottom: 20px;
 }
 
-.twitch_cast p, h1 {
+.twitch_cast p, .twitch_cast h1 {
     width: 50vw;
     background-color: #0000001f;
     color: #ffffffff ;
@@ -405,3 +407,88 @@ margin: 5px 0;
             margin: 0;
     }
 }
+
+/* FIN DE LA PAGE D'EVENTS ------------------------------------------- */
+
+a.news-card {
+            display: flex;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        a.news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.7);
+        }
+
+        .news-date {
+            background-color: #fa4454;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 80px;
+        }
+
+        .news-date span {
+            display: block;
+            font-weight: bold;
+        }
+
+        .news-content {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .news-title {
+            font-size: 1.5em;
+            margin: 0 0 10px 0;
+            color: #fa4454;
+        }
+
+        .news-description {
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .news-image {
+            width: 150px;
+            object-fit: cover;
+        }
+
+        .actualite_list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+        }
+
+    .actu_banner {
+    height: 300px;
+    background: url('https://gamingbolt.com/wp-content/uploads/2022/01/VALORANT_Neon.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 20px;
+    }
+
+        @media (max-width: 600px) {
+            a.news-card {
+                flex-direction: column;
+            }
+            .news-image {
+                width: 100%;
+                height: 200px;
+            }
+        }
