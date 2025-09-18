@@ -4,6 +4,10 @@
     font-family: "Mark Pro";
 }
 
+main {
+    padding-top: 20px;
+}
+
 /* --HEADER */
 
 header {
@@ -323,4 +327,81 @@ footer {
     .logo_mobile {
     display: none;
 }
+}
+
+/* FIN DE LA PAGE D'ACCUEIL ------------------------------------------- */
+
+.event_container {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.event {
+background: #141a20;
+margin-bottom: 20px;
+padding: 20px;
+border-radius: 10px;
+border-left: 5px solid #ff4655;
+width: 70vw;
+}
+.event h2 {
+margin: 0 0 10px;
+color: #ff4655;
+}
+.event p {
+margin: 5px 0;
+}
+
+.titre_event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px; 
+    background-color: #ff4655;
+    border-radius: 10px;
+    width: 55vw;
+    margin: 0px 20px 20px 20px;
+
+}
+
+.twitch_cast {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: url('./icon/valorant_banner.webp') no-repeat center/cover;
+    margin-bottom: 20px;
+}
+
+.twitch_cast p, h1 {
+    width: 50vw;
+    background-color: #0000001f;
+    color: #ffffffff ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.stream {
+    width: 70vw;
+    height: 70vh;
+}
+
+@media (max-width: 750px) {
+
+    .titre_event {
+            width: 75vw;
+    }
+
+}
+
+@media (max-width: 325px) { 
+
+    .titre_event {
+            font-size: 15px;
+            margin: 0;
+    }
 }
