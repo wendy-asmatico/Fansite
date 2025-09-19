@@ -149,8 +149,8 @@ video {
 /* LIEN evenement */
 
 .events {
-    height: 300px; /* hauteur de la bannière */
-    background: url('./icon/banner.jpeg') no-repeat center/cover;
+    height: 300px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.39)), url('../icon/banner.jpeg') no-repeat center/cover;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,6 +159,8 @@ video {
     position: relative;
     gap: 20px;
     }
+
+
 
 .events_text {
     width: 50vw;
@@ -249,7 +251,7 @@ footer a {
 
 /* FOOTER */
 
- footer p {
+footer p {
     width: 50vw;
  }
 }
@@ -268,11 +270,15 @@ footer a {
 .header {
     gap: 15px;
 }
+
+
 }
 
 /* -- MOBILE RESPONSIVE */
 
 @media (max-width: 460px) {
+
+
     .logo_mobile {
     height: 20px;
     width: 20px;
@@ -287,6 +293,7 @@ footer a {
     flex-direction: column;
 
 }
+
 
 .presentation {
     width: 80vw;
@@ -318,6 +325,8 @@ video {
 
 }
 
+
+
 footer {
     flex-direction: column;
     gap: 30px;
@@ -329,6 +338,8 @@ footer {
     .logo_mobile {
     display: none;
 }
+
+
 }
 
 /* FIN DE LA PAGE D'ACCUEIL ------------------------------------------- */
